@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MuniciPAL/1.0.0": {
+        "runtime": {
+          "MuniciPAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MuniciPAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
