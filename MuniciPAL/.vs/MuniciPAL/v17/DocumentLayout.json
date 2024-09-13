@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\desktop\\prog3b\\municipal\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\desktop\\prog3b\\municipal\\views\\home\\reportissues.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:views\\home\\reportissues.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\desktop\\prog3b\\municipal\\models\\reportedissues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:models\\reportedissues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\desktop\\prog3b\\municipal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\desktop\\prog3b\\municipal\\views\\home\\announcements.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:views\\home\\announcements.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\desktop\\prog3b\\municipal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\desktop\\prog3b\\municipal\\views\\home\\reportissues.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:views\\home\\reportissues.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\desktop\\prog3b\\municipal\\views\\home\\servicerequeststatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:views\\home\\servicerequeststatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -43,32 +43,8 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T08:06:18.483Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAQAAAAAAAAAAADwvysAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-12T09:08:43.376Z",
+              "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Announcements.cshtml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\Views\\Home\\Announcements.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Announcements.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\Views\\Home\\Announcements.cshtml",
-              "RelativeToolTip": "Views\\Home\\Announcements.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T08:17:49.676Z"
             },
             {
               "$type": "Document",
@@ -78,21 +54,54 @@
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T07:43:39.554Z"
+              "WhenOpened": "2024-09-12T07:43:39.554Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReportedIssues.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\Models\\ReportedIssues.cs",
+              "RelativeDocumentMoniker": "Models\\ReportedIssues.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\Models\\ReportedIssues.cs",
+              "RelativeToolTip": "Models\\ReportedIssues.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T07:04:49.86Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ServiceRequestStatus.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\Views\\Home\\ServiceRequestStatus.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ServiceRequestStatus.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\Views\\Home\\ServiceRequestStatus.cshtml",
+              "RelativeToolTip": "Views\\Home\\ServiceRequestStatus.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T06:48:56.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ReportIssues.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\Views\\Home\\ReportIssues.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\ReportIssues.cshtml",
               "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\Views\\Home\\ReportIssues.cshtml",
               "RelativeToolTip": "Views\\Home\\ReportIssues.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T07:42:40.389Z"
+              "WhenOpened": "2024-09-12T07:42:40.389Z",
+              "EditorCaption": ""
             }
           ]
         }

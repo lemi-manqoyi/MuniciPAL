@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lab_services_student\\Desktop\\PROG2B\\MuniciPAL\\MuniciPAL.csproj": {}
+    "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\MuniciPAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lab_services_student\\Desktop\\PROG2B\\MuniciPAL\\MuniciPAL.csproj": {
+    "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\MuniciPAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lab_services_student\\Desktop\\PROG2B\\MuniciPAL\\MuniciPAL.csproj",
+        "projectUniqueName": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\MuniciPAL.csproj",
         "projectName": "MuniciPAL",
-        "projectPath": "C:\\Users\\lab_services_student\\Desktop\\PROG2B\\MuniciPAL\\MuniciPAL.csproj",
+        "projectPath": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\MuniciPAL.csproj",
         "packagesPath": "C:\\Users\\lab_services_student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lab_services_student\\Desktop\\PROG2B\\MuniciPAL\\obj\\",
+        "outputPath": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
