@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\MuniciPAL.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\wwwroot\\Imgs\\deadmuniciPAL.png",
+      "PackagePath": "staticwebassets\\Imgs\\deadmuniciPAL.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\wwwroot\\Imgs\\municiPAL.jpg",
+      "PackagePath": "staticwebassets\\Imgs\\municiPAL.jpg"
+    },
+    {
       "Id": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\wwwroot\\bootstrap\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\css\\bootstrap.min.css"
     },

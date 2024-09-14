@@ -21,6 +21,7 @@ body {
   margin-bottom: 60px;
 }
 
+/*styling the a reference links as buttons, targetting the report page*/
 .mybtnReport {
     background-color: #ffd800;
     color: black;
@@ -31,6 +32,7 @@ body {
     cursor: pointer;
 }
 
+/*styling the a reference links as buttons, targetting the request page*/
 .mybtnRequest {
     background-color: #51ba12;
     color: black;
@@ -41,6 +43,7 @@ body {
     cursor: pointer;
 }
 
+/*styling the a reference links as buttons, targetting the news page*/
 .mybtnNews {
     background-color: #e1bc8e;
     color: black;
@@ -49,4 +52,27 @@ body {
     border: groove;
     border-radius: 4px;
     cursor: pointer;
+}
+
+/*styling the input textbox, targetting the text type*/
+input[type=text] {
+    width: 500px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/*styling the select to the match the other elements */
+select {
+    width: 500px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*styling the input textbox, targetting the file type*/
+input[type=file] {
+    width: 500px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
