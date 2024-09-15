@@ -20,28 +20,38 @@
         <optgroup label="- - Road Signs - -"></optgroup>
             <option value="DelayedRobots">Delayed Robots</option>
             <option value="HumanError">Incorrect Information on Distance to Destination</option>
-            <option value="Theft">Report Missing Goods</option>
+            <option value="Theft">Report Missing Resources</option>
         <optgroup label="- - Water - -"></optgroup>
             <option value="BurstPipe">Burst Pipe</option>
-            <option value="Theft">Report Missing Goods</option>
+            <option value="Theft">Report Stolen Water Pipes</option>
         <optgroup label="- - Sanitation - -"></optgroup>
             <option value="BadWater">Unsafe Drinking Water</option>
-            <option value="BurstSewer">BurstSeweragePipes</option>
-
-
-
+            <option value="BurstSewer">Burst Sewerage Pipes</option>
     </select>
     <br />
 
     <label for=" tarDescrition">Enter the Description of Issue</label>
     <textarea id="tarDescription" rows="5" cols="60" name="inpDescription"></textarea>
-    <br />
-
-    <label for=" inpAttachmentn">Attach ALL Supporting Documents (.pdf; .docx; .xlsx; .mp4; .mp3; etc)</label>
-    <input id="inpAttachments" type="file" name="inpAttachments" value="" />
- 
+    <br />  
 </div>
-<br />
+
+
+<div class="uploadbox ">
+    <div class="d-flex flex-column align-items-center">
+        <br />
+        <label for=" inpAttachments">Attach ALL Supporting Documents (.pdf; .docx; .xlsx; .mp4; .mp3; etc)</label>
+        <br />
+        <input id="inpAttachments" type="file" name="inpAttachments" value="" />
+        <div class="d-flex justify-content-between ">
+            <div class="progress-bar">
+                <div class="progress-bar-fill" style="width:0%;"></div>
+            </div>
+            <br />
+            <label id="progressText">0%</label>
+        </div>
+       <script src="~/js/site.js"></script>
+    </div>
+</div>
 <br />
 <br />
 <div class="d-flex justify-content-evenly">
