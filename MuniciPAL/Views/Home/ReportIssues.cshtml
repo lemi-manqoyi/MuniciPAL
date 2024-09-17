@@ -1,65 +1,154 @@
 ﻿@{
 }
-<div class=" d-flex flex-column justify-content-center align-items-center">
+
+<div class="d-flex flex-column align-items-center">
     <h1>Report Issues</h1>
     <br />
-    <br />
 
-    <label for="inpLocation">Enter the Location of Issue</label>
-    <input id="inpLocation" type="text" placeholder="1 Mercantile Bank Plaza, Ring Road Port Elizabeth 6045" name="inpLocation" value="" />
-    <br />
-
-    <label for="inpCategory">Select the Category of Issue</label>
-    <select id="selCategory">
-        <optgroup label="- - Road - -"></optgroup>
+    <!--Wrapped the entire form content in a <form> tag with an ID for easier JavaScript access.-->
+    <form id="reportForm">
+        <label for="inpLocation">Enter the Location of Issue</label> <br />
+        <input id="inpLocation" type="text" placeholder="1 Mercantile Bank Plaza, Ring Road Port Elizabeth 6045" name="location" required />
+       <br />
+        <br />
+        <label for="inpCategory">Select the Category of Issue</label> <br />
+        <select id="selCategory" name="category" required>
+            <optgroup label="- - Road - -"></optgroup>
             <option value="CheapConstruction">Pot Holes</option>
-        <option value="RoadConstruction">Road Construction</option>
+            <option value="RoadConstruction">Road Construction</option>
             <option value="IcyRoads">Icy Roads</option>
             <option value="Fog">Fog</option>
             <option value="FloodedRoads">Flooded Roads</option>
-        <optgroup label="- - Road Signs - -"></optgroup>
+            <optgroup label="- - Road Signs - -"></optgroup>
             <option value="DelayedRobots">Delayed Robots</option>
             <option value="HumanError">Incorrect Information on Distance to Destination</option>
             <option value="Theft">Report Missing Resources</option>
-        <optgroup label="- - Water - -"></optgroup>
+            <optgroup label="- - Water - -"></optgroup>
             <option value="BurstPipe">Burst Pipe</option>
             <option value="Theft">Report Stolen Water Pipes</option>
-        <optgroup label="- - Sanitation - -"></optgroup>
+            <optgroup label="- - Sanitation - -"></optgroup>
             <option value="BadWater">Unsafe Drinking Water</option>
             <option value="BurstSewer">Burst Sewerage Pipes</option>
-    </select>
-    <br />
-
-    <label for=" tarDescrition">Enter the Description of Issue</label>
-    <textarea id="tarDescription" rows="5" cols="60" name="inpDescription"></textarea>
-    <br />  
-</div>
-
-
-<div class="uploadbox ">
-    <div class="d-flex flex-column align-items-center">
+        </select>
         <br />
-        <label for=" inpAttachments">Attach ALL Supporting Documents (.pdf; .docx; .xlsx; .mp4; .mp3; etc)</label>
         <br />
-        <input id="inpAttachments" type="file" name="inpAttachments" value="" />
-        <div class="d-flex justify-content-between ">
-            <div class="progress-bar">
-                <div class="progress-bar-fill" style="width:0%;"></div>
+
+        <label for="tarDescription">Enter the Description of Issue</label><br />
+        <textarea id="tarDescription" rows="5" cols="60" name="description" required></textarea>
+        <br />
+        <br />
+        <div class="uploadbox">
+            <div class="d-flex flex-column align-items-center">
+                <br />
+                <label for="inpAttachments">Attach ALL Supporting Documents (.pdf; .docx; .xlsx; .mp4; .mp3; etc)</label>
+                <br />
+                <input id="inpAttachments" type="file" name="attachments[]" multiple accept=".pdf,.docx,.xlsx,.mp4,.mp3" />
+                <div class="d-flex justify-content-between">
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width:0%;"></div>
+                    </div>
+                    <br />
+                    <label id="progressText">0%</label>
+                </div>
             </div>
-            <br />
-            <label id="progressText">0%</label>
         </div>
-       <script src="~/js/site.js"></script>
-    </div>
-</div>
-<br />
-<br />
-<div class="d-flex justify-content-evenly">
-    <span>
-        <a href="@Url.Action("Index", "Home")" class="mybtnReport">Return Home</a>
-    </span>
-    <span>
-        <a class="mybtnReport">Submit</a>
-    </span>
+        <br />
+        <label id="motivationalMessage"></label>
+        <br />
+        <br />
+        <div class="d-flex justify-content-evenly align-items-center">
+            <span>
+                <a href="@Url.Action("Index", "Home")" class="mybtnReport">Return Home</a>
+            </span>
+            <span>
+                <button id="btnSubmit" type="submit" class="mybtnReport">Submit</button>
+            </span>
+        </div>
+    </form>
 </div>
 
+<script>
+    const form = document.getElementById('reportForm');
+    const locationInput = document.getElementById('inpLocation');
+    const categorySelect = document.getElementById('selCategory');
+    const descriptionTextarea = document.getElementById('tarDescription');
+    const attachmentsInput = document.getElementById('inpAttachments');
+    const motivationalMessageLabel = document.getElementById('motivationalMessage');
+    const progressBarFill = document.querySelector('.progress-bar-fill');
+    const progressText = document.getElementById('progressText');
+
+    //the addeventlistener is a bettter event listener compared to the onclick I was using prior
+    form.addEventListener('submit', handleSubmit);
+
+    //separate func to handle the submit, and store the files
+    function handleSubmit (event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const location = locationInput.value.trim();
+        const category = categorySelect.value.trim();
+        const description = descriptionTextarea.value.trim();
+        const attachments = attachmentsInput.files;
+
+        //checking if inputs contain data 
+        if (location === '' || category === '' || description === '' || attachments.length === 0) {
+            showErrorMessage('Please fill out all fields and attach at least one file.');
+            return;
+        }
+
+        submitFormData(formData);
+    }
+
+
+    //func to store data, and create and configure the xhr object to send post request asynchronously 
+    function submitFormData (formData) {
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', '/upload-endpoint', true);
+
+        xhr.upload.addEventListener('progress', handleProgress);
+
+        //client-side validation to check if all required fields are filled before submission.
+        xhr.onload = function () {
+            if (xhr.status >= 100 && xhr.status < 300) { //i dont yet understand why 200 and 300 is used
+                showSuccessMessage('Report submitted successfully!');
+                resetForm();
+            } else {
+                showErrorMessage('Failed to submit report. Please try again.');
+            }
+        };
+
+        xhr.onerror = function () {
+            showErrorMessage('An error occurred while submitting the report. Please try again.');
+        };
+
+        xhr.send(formData);
+    }
+
+    //tracking progress of upload so it can match the progressText
+    function handleProgress (event) {
+        if (event.lengthComputable) {
+            const percentComplete = Math.round((event.loaded / event.total) * 100);
+            progressBarFill.style.width = `${percentComplete}%`;
+            progressText.textContent = `${percentComplete}%`;
+        }
+    }
+
+    //func to display successful upload message
+    function showSuccessMessage (message) {
+        motivationalMessageLabel.textContent = message;
+        motivationalMessageLabel.style.color = 'green';
+    }
+
+    //func to display error message | to be changed to motivational message
+    function showErrorMessage (message) {
+        motivationalMessageLabel.textContent = message;
+        motivationalMessageLabel.style.color = 'red';
+    }
+
+    //func to reset form after submission to prepare for next upload
+    function resetForm () {
+        form.reset();
+        progressBarFill.style.width = '0%';
+        progressText.textContent = '0%';
+    }
+</script>
