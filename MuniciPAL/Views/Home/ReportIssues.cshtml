@@ -6,7 +6,7 @@
     <br />
 
     <!--Wrapped the entire form content in a <form> tag with an ID for easier JavaScript access.-->
-    <form id="reportForm">
+    <form id="reportForm" action="/Home/SubmitReport" method="post">
         <label for="inpLocation">Enter the Location of Issue</label> <br />
         <input id="inpLocation" type="text" placeholder="1 Mercantile Bank Plaza, Ring Road Port Elizabeth 6045" name="location" required />
        <br />
@@ -68,6 +68,7 @@
 </div>
 
 <script>
+
     const form = document.getElementById('reportForm');
     const locationInput = document.getElementById('inpLocation');
     const categorySelect = document.getElementById('selCategory');
@@ -77,78 +78,56 @@
     const progressBarFill = document.querySelector('.progress-bar-fill');
     const progressText = document.getElementById('progressText');
 
-    //the addeventlistener is a bettter event listener compared to the onclick I was using prior
     form.addEventListener('submit', handleSubmit);
 
-    //separate func to handle the submit, and store the files
     function handleSubmit (event) {
         event.preventDefault();
 
-        const formData = new FormData(form);
         const location = locationInput.value.trim();
         const category = categorySelect.value.trim();
         const description = descriptionTextarea.value.trim();
         const attachments = attachmentsInput.files;
 
-        //checking if inputs contain data 
-        if (location === '' || category === '' || description === '' || attachments.length === 0) {
-            showErrorMessage('Please fill out all fields and attach at least one file.');
+        //checking to see if the inputs elements contain any user input
+        if (location === '' || category === '' || description === '') {
+            showErrorMessage('Please fill out all fields.');
             return;
         }
 
-        submitFormData(formData);
+        submitFormData(location, category, description, attachments);
     }
 
+    //function to be called on event, it stores locally then submits to the controller without having to reload the page
+    function submitFormData (location, category, description, attachments) {
+        const formData = new FormData();
+        formData.append('location', location);
+        formData.append('category', category);
+        formData.append('description', description);
 
-    //func to store data, and create and configure the xhr object to send post request asynchronously 
-    function submitFormData (formData) {
-        const xhr = new XMLHttpRequest();
-        xhr.open('POST', '/upload-endpoint', true);
-
-        xhr.upload.addEventListener('progress', handleProgress);
-
-        //client-side validation to check if all required fields are filled before submission.
-        xhr.onload = function () {
-            if (xhr.status >= 100 && xhr.status < 300) { //i dont yet understand why 200 and 300 is used
-                showSuccessMessage('Report submitted successfully!');
-                resetForm();
-            } else {
-                showErrorMessage('Failed to submit report. Please try again.');
-            }
-        };
-
-        xhr.onerror = function () {
-            showErrorMessage('An error occurred while submitting the report. Please try again.');
-        };
-
-        xhr.send(formData);
-    }
-
-    //tracking progress of upload so it can match the progressText
-    function handleProgress (event) {
-        if (event.lengthComputable) {
-            const percentComplete = Math.round((event.loaded / event.total) * 100);
-            progressBarFill.style.width = `${percentComplete}%`;
-            progressText.textContent = `${percentComplete}%`;
+        for (let i = 0; i < attachments.length; i++) {
+            formData.append('attachments', attachments[i]);
         }
-    }
 
-    //func to display successful upload message
-    function showSuccessMessage (message) {
-        motivationalMessageLabel.textContent = message;
-        motivationalMessageLabel.style.color = 'green';
-    }
+        //getting and posting the data to the home controller method submit report which handles more complex backend code
+        fetch('/Home/SubmitReport', {
+            method: 'POST',
+            body: formData,
+            credentials: 'same-origin'
+        })
 
-    //func to display error message | to be changed to motivational message
-    function showErrorMessage (message) {
-        motivationalMessageLabel.textContent = message;
-        motivationalMessageLabel.style.color = 'red';
-    }
-
-    //func to reset form after submission to prepare for next upload
-    function resetForm () {
-        form.reset();
-        progressBarFill.style.width = '0%';
-        progressText.textContent = '0%';
+        //configuring the feedback to user about submission status
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    motivationalMessageLabel.value = 'Successful Submission';
+                    resetForm();
+                } else {
+                    motivationalMessageLabel.value = 'Error Submitting Report, Please Try Again';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                motivationalMessageLabel.value('Error Submitting Report, Please Try Again')
+            });
     }
 </script>

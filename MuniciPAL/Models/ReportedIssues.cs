@@ -9,8 +9,7 @@
 
      public String IssueDescription { get; set; }
 
-     public String IssueAttachments { get; set; } 
-       
-
+    public IFormFileCollection IssueAttachments { get; set; }
     }
+
 }

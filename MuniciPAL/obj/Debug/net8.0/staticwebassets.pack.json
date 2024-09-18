@@ -261,6 +261,18 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\wwwroot\\uploads\\cmcs_wireframes.pdf",
+      "PackagePath": "staticwebassets\\uploads\\cmcs_wireframes.pdf"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\wwwroot\\uploads\\st10085622_prog7312_poe_p1.pdf",
+      "PackagePath": "staticwebassets\\uploads\\st10085622_prog7312_poe_p1.pdf"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\Desktop\\PROG3B\\MuniciPAL\\wwwroot\\uploads\\transportDriverSchedule.pdf",
+      "PackagePath": "staticwebassets\\uploads\\transportDriverSchedule.pdf"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MuniciPAL.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
