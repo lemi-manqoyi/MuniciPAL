@@ -103,3 +103,59 @@ input[type=file] {
     height:fit-content;
       
 }
+
+/*styling the searchform*/
+#searchForm {
+    display: flex;
+    align-items: center;
+}
+
+/*styling the searchinput*/
+#searchInput {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 200px;
+   
+}
+
+.form-element {
+    margin-right: 15px;
+    text-align: center
+}
+
+.form-element:last-child {
+    margin-right: 0;
+}
+
+#searchForm img {
+    height: auto;
+    max-width: 60px;
+}
+
+#searchForm button [type="submit"] {
+    background-color: #e1bc8e;
+    color: black;
+    border: groove;
+    border-color: black;
+    padding: 14px 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#reportForm button[type="submit"] {
+    background-color: #ffd800;
+    color: black;
+    border: groove;
+    border-color: black;
+    padding: 14px 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+        background-color: #0056b3;
+}
+
