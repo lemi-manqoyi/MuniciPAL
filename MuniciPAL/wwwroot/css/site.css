@@ -47,11 +47,69 @@ body {
 .mybtnNews {
     background-color: #e1bc8e;
     color: black;
-    padding: 14px 25px;
+    padding: 14px 20px;
     margin: 8px 5px 0 5px;
     border: groove;
     border-radius: 4px;
     cursor: pointer;
+}
+
+/*styling the announcements card*/
+#announcementCard{
+    background-color: blanchedalmond;
+    border-radius: 8px;
+    border: solid 2px;
+    width: 450px;
+    height: 600px;
+    margin: 20px;
+    text-align:center;
+}
+#announcementHead{
+    margin:10px 0px 25px;
+}
+#announcementCardContent {
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border-radius: 8px;
+    border: solid 1px;
+    margin:auto;
+}
+
+/*styling the events card*/
+#eventCard {
+    background-color: blanchedalmond;
+    border-radius: 8px;
+    border: solid 2px;
+    width: 450px;
+    height: 600px;
+    margin: 20px 20px;
+    text-align: center;
+}
+#eventHead {
+    margin: 10px 0px 25px;
+}
+#eventCardContent {
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border-radius: 8px;
+    border: solid 1px;
+    margin: auto;
+}
+
+/*styling the a reference links as buttons, targetting the news page*/
+.mybtnSearch {
+    background-color: #e1bc8e;
+    color: black;
+    border: solid 2px;
+    height: 50px;
+    text-align: justify;
+    border-color: black;
+    padding: 14px 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 /*styling the input textbox, targetting the text type*/
@@ -133,16 +191,6 @@ input[type=file] {
     max-width: 60px;
 }
 
-#searchForm button [type="submit"] {
-    background-color: #e1bc8e;
-    color: black;
-    border: groove;
-    border-color: black;
-    padding: 14px 25px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
 
 #reportForm button[type="submit"] {
     background-color: #ffd800;
@@ -155,7 +203,4 @@ input[type=file] {
     transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
-        background-color: #0056b3;
-}
 

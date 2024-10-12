@@ -1,6 +1,10 @@
-﻿@{
-
+﻿@model List<MuniciPAL.Models.AnnouncedEvents>
+@using (Html.BeginForm("Display", "Announcements", FormMethod.Post, 
+new { enctype = "multipart/form-data" }))
+{
+    
 }
+
 <div class="d-flex flex-column align-items-center">
     <h1>Local Events & Announcements</h1>
     <!-- basic search form structure with submit button | dont forget to sanitize user input -->
@@ -12,28 +16,51 @@
             <input id="inpSearch" type="text" placeholder="Search for Local Events and Announcements" />
         </div>
         <div class="form-element">
-            <button id="btnSearch" type="submit">Search</button>
+            <button id="btnSearch" class="mybtnSearch" type="submit">Search</button>
         </div>
     </form>
 
 
+    <div class="d-flex align-content-end">
 
-    <div id="eventCard">
-        
-        <div id="eventCardContent">
+        <div id="eventCard">
+        <h3 id="eventHead">Local Events</h3>
+            <div id="eventCardContent">
+                <!--null checking view-->
+                @if(Model != null && Model.Any()) 
+                {
+                        @foreach (var events in Model)
+                        {
+                            <p>
+                               Event Date: @events.eventDate,
+                               Location: @events.eventLocation, 
+                               Fee: @events.eventFee, 
+                               Theme: @events.eventTheme
+                            </p>
+       
+                        }
+                }
+                else
+                {
+                    <p>No events found.</p>
+                }
+
+
+            </div>
+
+        </div>
+       
+        <div id="announcementCard" >
+        <h3 id="announcementHead">Announcements</h3>
+            <div id="announcementCardContent" >
+
+
+            </div>
 
         </div>
 
     </div>
     
-    
-    <div id="announcementCard">
-        <img src="~/Imgs/megaphone.png" class="img-fluid" width="100" alt="megaphone for announcements image"/>
-        <div id="announcementCardContent">
-
-        </div>
-
-    </div>
 
 
 
@@ -43,17 +70,20 @@
         <a href="@Url.Action("Index", "Home")" class="mybtnNews">Return Home</a>
     </span>
 
+
+
+     <script>
+        //basic functionality of search form above
+        document.getElementById('searchForm').addEventListener('submit', function (e) 
+        {
+            e.preventDefault(); 
+            const searchedTerm = document.getElementById('inpSearch').value;
+            console.log('Searching For: ', searchedTerm);
+        }
+
+    </script>
 </div>
 
-<script>
-    //basic functionality of search form above
-    document.getElementById('searchForm').addEventListener('submit', function (e) 
-    {
-        e.preventDefault(); 
-        const searchedTerm = document.getElementById('inpSearch').value;
-        console.log('Searching For: ', searchedTerm);
-    }
 
-</script>
 
 
