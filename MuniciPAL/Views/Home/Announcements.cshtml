@@ -1,53 +1,121 @@
-﻿@model List<MuniciPAL.Models.AnnouncedEvents>
-@using (Html.BeginForm("Display", "Announcements", FormMethod.Post, 
-new { enctype = "multipart/form-data" }))
-{
-    
+﻿@model IEnumerable<MuniciPAL.Models.AnnouncedEvents>
+
+@{
+    bool hasSearched = ViewBag.HasSearched ?? false; // Use ViewBag to pass the flag
 }
 
-<div class="d-flex flex-column align-items-center">
-    <h1>Local Events & Announcements</h1>
-    <!-- basic search form structure with submit button | dont forget to sanitize user input -->
-    <form id="searchForm">
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { id = "searchForm" }))
+{
+    <div class="d-flex align-content-end">
+    <h3>Local Events and Announcements</h3>
+    </div>
+    <br/>
+    <div class="d-flex flex-column align-items-center">
         <div class="form-element">
             <img src="~/Imgs/Search-PNG.png" class="img-fluid" width="60" alt="search icon" />
         </div>
         <div class="form-element">
-            <input id="inpSearch" type="text" placeholder="Search for Local Events and Announcements" />
+            <input id="inpSearch" name="searchTerm" type="text" placeholder="Search for Events Category or Dates" />
         </div>
         <div class="form-element">
             <button id="btnSearch" class="mybtnSearch" type="submit">Search</button>
         </div>
-    </form>
 
+    </div>
+    
+    <!-- Section for displaying search results -->
+    @if (hasSearched)
+    {
+        <div id="searchResults" class="mt-4">
+            <h3>Search Results</h3>
+            @if (Model != null && Model.Any())
+            {
+                <table class="table table-bordered table-custom">
+                    <thead>
+                        <tr>
+                            <th>Event Date</th>
+                            <th>Category</th>
+                            <th>Location</th>
+                            <th>Ticket Fee (R)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var events in Model)
+                        {
+                            <tr>
+                                <td>@events.eventDate</td>
+                                <td>@events.eventCategory</td>
+                                <td>@events.eventLocation</td>
+                                <td>@events.eventFee.ToString("C")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <p>No results found for your search.</p>
+            }
+        </div>
+    }
+    else
+    {
+        <div id="searchResults" class="mt-4">
+            <h3>Search Results</h3>
+            <p>No search has been performed yet.</p>
+        </div>
+    }
+    
+}
 
-    <div class="d-flex align-content-end">
+<div class="d-flex flex-column align-items-center">
+    <div id="displayMainContent" class="d-flex align-content-end">
 
         <div id="eventCard">
         <h3 id="eventHead">Local Events</h3>
             <div id="eventCardContent">
-                <!--null checking view-->
-                @if(Model != null && Model.Any()) 
-                {
-                        @foreach (var events in Model)
-                        {
-                            <p>
-                               Event Date: @events.eventDate,
-                               Location: @events.eventLocation, 
-                               Fee: @events.eventFee, 
-                               Theme: @events.eventTheme
-                            </p>
-       
-                        }
-                }
-                else
-                {
-                    <p>No events found.</p>
-                }
 
+                <table class="table table-bordered table-custom">
+                        <thead>
+                            <tr>
+                                <th>Event Date</th>
+                                <th>Category</th>
+                                <th>Location</th>
+                                <th>Ticket Fee (R)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                        
+                            @foreach (var events in Model)
+                            {
+                            <tr>
+                                <td>@events.eventDate</td>
+                                    <td>@events.eventCategory</td>
+                                    <td>@events.eventLocation</td>
+                                <td>@events.eventFee.ToString("C")</td>
+                            </tr>
+                            }
+                       
+                        </tbody>
+                    </table>
+              
 
             </div>
 
+            @* Debugging information *@
+            @if (Model == null)
+            {
+                <p>Model is null</p>
+            }
+            else if (Model.Count().Equals(0))
+            {
+                <p>Model is empty</p>
+            }
+            else
+            {
+                <p>Model count: @Model.Count()</p>
+            }
         </div>
        
         <div id="announcementCard" >
@@ -60,27 +128,22 @@ new { enctype = "multipart/form-data" }))
         </div>
 
     </div>
+
     
-
-
-
-
     <!-- return home button -->
     <span class="d-flex justify-content-center">
         <a href="@Url.Action("Index", "Home")" class="mybtnNews">Return Home</a>
     </span>
 
 
-
-     <script>
-        //basic functionality of search form above
-        document.getElementById('searchForm').addEventListener('submit', function (e) 
-        {
-            e.preventDefault(); 
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function (e) {
             const searchedTerm = document.getElementById('inpSearch').value;
-            console.log('Searching For: ', searchedTerm);
-        }
-
+            if (!searchedTerm) {
+                e.preventDefault();
+                alert("Please enter a search term.");
+            }
+        });
     </script>
 </div>
 

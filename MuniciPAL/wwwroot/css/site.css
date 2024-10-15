@@ -204,3 +204,25 @@ input[type=file] {
 }
 
 
+.table-custom td, .table-custom th {
+    padding: 15px; /* Adjust as needed */
+}
+
+.table-custom {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Optional: to soften the corners */
+    overflow: hidden; /* To apply border-radius effectively */
+}
+
+    .table-custom th {
+        background-color: #e1bc8e; /* Bootstrap primary color */
+        color: black;
+    }
+
+.table-custom tbody tr:nth-child(even) {
+        background-color: blanchedalmond; /* Light grey for even rows */
+}
+
+.table-custom tbody tr:hover {
+        background-color: #e0e0e0; /* Light grey on hover */
+}
