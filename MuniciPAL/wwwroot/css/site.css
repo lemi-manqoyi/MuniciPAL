@@ -59,7 +59,7 @@ body {
     background-color: blanchedalmond;
     border-radius: 8px;
     border: solid 2px;
-    width: 450px;
+    width: 850px;
     height: 600px;
     margin: 20px;
     text-align:center;
@@ -69,7 +69,7 @@ body {
 }
 #announcementCardContent {
     background-color: white;
-    width: 400px;
+    width: 750px;
     height: 500px;
     border-radius: 8px;
     border: solid 1px;
@@ -81,7 +81,7 @@ body {
     background-color: blanchedalmond;
     border-radius: 8px;
     border: solid 2px;
-    width: 450px;
+    width: 850px;
     height: 600px;
     margin: 20px 20px;
     text-align: center;
@@ -91,7 +91,7 @@ body {
 }
 #eventCardContent {
     background-color: white;
-    width: 400px;
+    width: 750px;
     height: 500px;
     border-radius: 8px;
     border: solid 1px;
@@ -202,7 +202,12 @@ input[type=file] {
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
-
+/*scrollable content for the card content so it does not overflow into the card*/
+.scrollable-content {
+    max-height: 500px; /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: visible; /* Hide horizontal overflow */
+}
 
 .table-custom td, .table-custom th {
     padding: 15px; /* Adjust as needed */

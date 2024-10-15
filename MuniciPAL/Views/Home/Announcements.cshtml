@@ -2,24 +2,25 @@
 
 @{
     bool hasSearched = ViewBag.HasSearched ?? false; // Use ViewBag to pass the flag
-}
+
+ }
 
 @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { id = "searchForm" }))
 {
-    <div class="d-flex align-content-end">
+    <div  >
     <h3>Local Events and Announcements</h3>
     </div>
-    <br/>
-    <div class="d-flex flex-column align-items-center">
+        <br/>
+        <div class="d-flex flex-column align-items-center">
         <div class="form-element">
-            <img src="~/Imgs/Search-PNG.png" class="img-fluid" width="60" alt="search icon" />
+                <img src="~/Imgs/Search-PNG.png" class="img-fluid" width="60" alt="search icon" />
         </div>
         <div class="form-element">
-            <input id="inpSearch" name="searchTerm" type="text" placeholder="Search for Events Category or Dates" />
+                <input id="inpSearch"  name="searchTerm" type="text" placeholder="Search for Events Category or Dates" />
         </div>
         <div class="form-element">
-            <button id="btnSearch" class="mybtnSearch" type="submit">Search</button>
-        </div>
+                <button id="btnSearch" class="mybtnSearch" type="submit">Search</button>
+         </div>
 
     </div>
     
@@ -39,15 +40,33 @@
                             <th>Ticket Fee (R)</th>
                         </tr>
                     </thead>
+                    <script>
+                        document.getElementById('searchForm').addEventListener('submit', function (e) {
+                            var foundItem;
+                            const searchedItem = document.getElementById('inpSearch').value;
+                            if (!searchedTerm) {
+                                e.preventDefault();
+                                alert("Please enter a search term.");
+                            }
+                            else {
+                                foundItem = searchedItem;
+                                console.log("foundItem")
+                            }
+                        });
+
+                    </script>
                     <tbody>
                         @foreach (var events in Model)
                         {
-                            <tr>
-                                <td>@events.eventDate</td>
-                                <td>@events.eventCategory</td>
-                                <td>@events.eventLocation</td>
-                                <td>@events.eventFee.ToString("C")</td>
-                            </tr>
+                            if(events.eventCategory.Contains("foundItem") || events.eventDate.ToString().Contains("foundItem"))
+                            {
+                                <tr>
+                                    <td>@events.eventDate</td>
+                                    <td>@events.eventCategory</td>
+                                    <td>@events.eventLocation</td>
+                                    <td>@events.eventFee.ToString("C3")</td>
+                                </tr>
+                            }              
                         }
                     </tbody>
                 </table>
@@ -72,12 +91,12 @@
     <div id="displayMainContent" class="d-flex align-content-end">
 
         <div id="eventCard">
-        <h3 id="eventHead">Local Events</h3>
-            <div id="eventCardContent">
-
+        <h3 id="eventHead">All Local Events</h3>
+            <div id="eventCardContent" class="scrollable-content">
                 <table class="table table-bordered table-custom">
                         <thead>
                             <tr>
+                                <th>Name</th>
                                 <th>Event Date</th>
                                 <th>Category</th>
                                 <th>Location</th>
@@ -89,11 +108,14 @@
                         
                             @foreach (var events in Model)
                             {
+                               
                             <tr>
+
+                                <td>@events.eventName</td>
                                 <td>@events.eventDate</td>
-                                    <td>@events.eventCategory</td>
-                                    <td>@events.eventLocation</td>
-                                <td>@events.eventFee.ToString("C")</td>
+                                <td>@events.eventCategory</td>
+                                <td>@events.eventLocation</td>
+                                <td>@events.eventFee.ToString("C3")</td>
                             </tr>
                             }
                        
@@ -119,8 +141,38 @@
         </div>
        
         <div id="announcementCard" >
-        <h3 id="announcementHead">Announcements</h3>
-            <div id="announcementCardContent" >
+        <h3 id="announcementHead">Up-Coming Events</h3>
+            <div id="announcementCardContent"  class="scrollable-content">
+                <table class="table table-bordered table-custom">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Event Date</th>
+                            <th>Category</th>
+                            <th>Location</th>
+                            <th>Ticket Fee (R)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        @foreach (var events in Model)
+                        {
+                            if (events.isAnnounced.Equals(true))
+                            {
+                                <tr>
+                                    <td>@events.eventName</td>
+                                    <td>@events.eventDate</td>
+                                    <td>@events.eventCategory</td>
+                                    <td>@events.eventLocation</td>
+                                    <td>@events.eventFee.ToString("C3")</td>
+                                </tr>
+                            }
+                            
+                        }
+
+                    </tbody>
+                </table>
 
 
             </div>
@@ -136,15 +188,7 @@
     </span>
 
 
-    <script>
-        document.getElementById('searchForm').addEventListener('submit', function (e) {
-            const searchedTerm = document.getElementById('inpSearch').value;
-            if (!searchedTerm) {
-                e.preventDefault();
-                alert("Please enter a search term.");
-            }
-        });
-    </script>
+   
 </div>
 
 
