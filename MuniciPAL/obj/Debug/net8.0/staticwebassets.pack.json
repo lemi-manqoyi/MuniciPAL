@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Imgs\\Search-PNG.png"
     },
     {
+      "Id": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\wwwroot\\Imgs\\bgMunicipal.png",
+      "PackagePath": "staticwebassets\\Imgs\\bgMunicipal.png"
+    },
+    {
       "Id": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\wwwroot\\Imgs\\deadmuniciPAL.png",
       "PackagePath": "staticwebassets\\Imgs\\deadmuniciPAL.png"
     },

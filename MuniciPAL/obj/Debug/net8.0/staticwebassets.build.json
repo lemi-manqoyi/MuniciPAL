@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ixz10t99EMpskeYMrBIt9fi5NMZNftm4I87ee6vsU3E=",
+  "Hash": "WMrxVTsn/vNLwWmIaiNE6aJF4rdafnNHtF3limPRRKo=",
   "Source": "MuniciPAL",
   "BasePath": "_content/MuniciPAL",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\wwwroot\\Imgs\\bgMunicipal.png",
+      "SourceId": "MuniciPAL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\wwwroot\\",
+      "BasePath": "_content/MuniciPAL",
+      "RelativePath": "Imgs/bgMunicipal.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imgs\\bgMunicipal.png"
     },
     {
       "Identity": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\wwwroot\\Imgs\\deadmuniciPAL.png",

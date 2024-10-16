@@ -84,13 +84,14 @@ namespace MuniciPAL.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(string searchTerm)
+        public IActionResult Index(string searchTerm, object Found)
         {
            
             searchTerm = Request.Form["searchTerm"];
-          
+            Found = Request.Form["foundItem"];
                  
             ViewBag.HasSearched = true; // Set the flag to indicate a search has been performed
+            ViewBag.Found = Found;
 
             return View(searchTerm);
         }

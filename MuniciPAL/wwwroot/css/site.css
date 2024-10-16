@@ -166,6 +166,9 @@ input[type=file] {
 #searchForm {
     display: flex;
     align-items: center;
+    flex-direction: column; /* Align elements vertically */
+    gap: 10px; /* Space between elements */
+    margin-top: 20px; /* Optional: space above the container */
 }
 
 /*styling the searchinput*/
@@ -178,12 +181,8 @@ input[type=file] {
 }
 
 .form-element {
-    margin-right: 15px;
+    margin-right: 25px;
     text-align: center
-}
-
-.form-element:last-child {
-    margin-right: 0;
 }
 
 #searchForm img {
