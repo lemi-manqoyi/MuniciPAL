@@ -1,18 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<div class="container align-items-center">
-    <div class=" text-center align-middle">
-        <h1>Welcome to your Munici-PAL</h1>
-        <img src="Imgs/municiPAL.jpg" alt="MuniciPAL Logo" height="350"/>
-        <p>Here you can report issues, find more and new information, and request your service status </p>
-    </div>
+<body>
+    <div class="container align-items-center">
+        <div class=" text-center align-middle">
+            <h1>Welcome to your Munici-PAL</h1>
+            <img src="Imgs/municiPAL.jpg" alt="MuniciPAL Logo" height="350" />
+            <p>Here you can report issues, find more and new information, and request your service status </p>
+        </div>
 
-    <div class="btn-group d-flex justify-content-center">
-        <a href="@Url.Action("ReportIssues", "Home")" class="mybtnReport">Report Issues</a>
-        <a href="@Url.Action("Announcements", "Home")" class="mybtnNews">Announcements</a>
-        <a href="@Url.Action("ServiceRequestStatus", "Home")" class="mybtnRequest">Service Request Status</a>
+        <div class="btn-group d-flex justify-content-center">
+            <a href="@Url.Action("ReportIssues", "Home")" class="mybtnReport">Report Issues</a>
+            <a href="@Url.Action("Announcements", "Home")" class="mybtnNews">Announcements</a>
+            <a href="@Url.Action("ServiceRequestStatus", "Home")" class="mybtnRequest">Service Request Status</a>
+        </div>
     </div>
-</div>
+</body>
+
 
 

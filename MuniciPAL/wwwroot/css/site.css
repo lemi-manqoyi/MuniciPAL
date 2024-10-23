@@ -19,6 +19,7 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-image: Url("~/Imgs/bgMunicipal.png");
 }
 
 /*styling the a reference links as buttons, targetting the report page*/
@@ -203,7 +204,7 @@ input[type=file] {
 }
 /*scrollable content for the card content so it does not overflow into the card*/
 .scrollable-content {
-    max-height: 500px; /* Adjust height as needed */
+    max-height: 500px; 
     overflow-y: auto; /* Enable vertical scrolling */
     overflow-x: visible; /* Hide horizontal overflow */
 }
@@ -219,12 +220,12 @@ input[type=file] {
 }
 
     .table-custom th {
-        background-color: #e1bc8e; /* Bootstrap primary color */
+        background-color: #e1bc8e;
         color: black;
     }
 
 .table-custom tbody tr:nth-child(even) {
-        background-color: blanchedalmond; /* Light grey for even rows */
+        background-color: blanchedalmond; 
 }
 
 .table-custom tbody tr:hover {
