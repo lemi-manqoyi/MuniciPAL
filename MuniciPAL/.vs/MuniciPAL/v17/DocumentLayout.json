@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\models\\binarysearchtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:models\\binarysearchtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\models\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:models\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\controllers\\servicerequestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:controllers\\servicerequestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\models\\binarysearchtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:models\\binarysearchtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\views\\home\\servicerequeststatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -17,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\views\\home\\reviewclaim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:views\\home\\reviewclaim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\models\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:models\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\controllers\\servicerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -79,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Node.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Models\\Node.cs",
               "RelativeDocumentMoniker": "Models\\Node.cs",
@@ -92,19 +88,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ServiceRequestManager.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Controllers\\ServiceRequestManager.cs",
-              "RelativeDocumentMoniker": "Controllers\\ServiceRequestManager.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Controllers\\ServiceRequestManager.cs",
-              "RelativeToolTip": "Controllers\\ServiceRequestManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T21:31:49.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ReviewClaim.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\ReviewClaim.cshtml",
@@ -113,8 +96,7 @@
               "RelativeToolTip": "Views\\Home\\ReviewClaim.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-18T16:09:52.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T16:09:52.675Z"
             },
             {
               "$type": "Document",
@@ -131,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BinarySearchTree.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Models\\BinarySearchTree.cs",
               "RelativeDocumentMoniker": "Models\\BinarySearchTree.cs",
@@ -144,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AnnouncementsController.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Controllers\\AnnouncementsController.cs",
               "RelativeDocumentMoniker": "Controllers\\AnnouncementsController.cs",
@@ -152,12 +134,11 @@
               "RelativeToolTip": "Controllers\\AnnouncementsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T08:12:42.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T08:12:42.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "ReportIssues.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\ReportIssues.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\ReportIssues.cshtml",
@@ -169,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ServiceRequestController.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Controllers\\ServiceRequestController.cs",
               "RelativeDocumentMoniker": "Controllers\\ServiceRequestController.cs",
@@ -177,25 +158,23 @@
               "RelativeToolTip": "Controllers\\ServiceRequestController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T17:16:11.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T17:16:11.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MuniciPAL",
+              "DocumentIndex": 6,
+              "Title": "MuniciPAL.csproj",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\MuniciPAL.csproj",
               "RelativeDocumentMoniker": "MuniciPAL.csproj",
               "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\MuniciPAL.csproj",
               "RelativeToolTip": "MuniciPAL.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-19T21:17:32.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T21:17:32.188Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Announcements.cshtml",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\Announcements.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Announcements.cshtml",
@@ -207,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "AnnouncedEvents.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Models\\AnnouncedEvents.cs",
               "RelativeDocumentMoniker": "Models\\AnnouncedEvents.cs",
