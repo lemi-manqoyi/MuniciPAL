@@ -73,13 +73,20 @@
     
 }
 
-<div class="d-flex flex-column align-items-center">
-    <div id="displayMainContent" class="d-flex align-content-end body">
-        
-        <div id="eventCard">
-        <h3 id="eventHead">All Local Events</h3>
-            <div id="eventCardContent" class="scrollable-content">
-                <table class="table table-bordered table-custom">
+
+
+<body>
+    <header>
+
+    </header>
+
+    <div class="d-flex flex-column align-items-center">
+        <div id="displayMainContent" class="d-flex align-content-end body">
+
+            <div id="eventCard">
+                <h3 id="eventHead">All Local Events</h3>
+                <div id="eventCardContent" class="scrollable-content">
+                    <table class="table table-bordered table-custom">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -91,62 +98,12 @@
                         </thead>
 
                         <tbody>
-                        
+
                             @foreach (var events in Model)
                             {
-                               
-                            <tr>
 
-                                <td>@events.eventName</td>
-                                <td>@events.eventDate</td>
-                                <td>@events.eventCategory</td>
-                                <td>@events.eventLocation</td>
-                                <td>@events.eventFee.ToString()</td>
-                            </tr>
-                            }
-                       
-                        </tbody>
-                    </table>
-              
-
-            </div>
-
-            @* Debugging information *@
-            @if (Model == null)
-            {
-                <p>Model is null</p>
-            }
-            else if (Model.Count().Equals(0))
-            {
-                <p>Model is empty</p>
-            }
-            else
-            {
-                <p>Total Events count: @Model.Count()</p>
-            }
-        </div>
-       
-        <div id="announcementCard" >
-        <h3 id="announcementHead">Up-Coming Events</h3>
-            <div id="announcementCardContent"  class="scrollable-content">
-                <table class="table table-bordered table-custom">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Event Date</th>
-                            <th>Category</th>
-                            <th>Location</th>
-                            <th>Ticket Fee (R)</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        @foreach (var events in Model)
-                        {
-                            if (events.isAnnounced.Equals(true))
-                            {
                                 <tr>
+
                                     <td>@events.eventName</td>
                                     <td>@events.eventDate</td>
                                     <td>@events.eventCategory</td>
@@ -154,41 +111,94 @@
                                     <td>@events.eventFee.ToString()</td>
                                 </tr>
                             }
-                            
-                        }
 
-                    </tbody>
-                </table>
-              
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+                @* Debugging information *@
+                @if (Model == null)
+                {
+                    <p>Model is null</p>
+                }
+                else if (Model.Count().Equals(0))
+                {
+                    <p>Model is empty</p>
+                }
+                else
+                {
+                    <p>Total Events count: @Model.Count()</p>
+                }
+            </div>
+
+            <div id="announcementCard">
+                <h3 id="announcementHead">Up-Coming Events</h3>
+                <div id="announcementCardContent" class="scrollable-content">
+                    <table class="table table-bordered table-custom">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Event Date</th>
+                                <th>Category</th>
+                                <th>Location</th>
+                                <th>Ticket Fee (R)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            @foreach (var events in Model)
+                            {
+                                if (events.isAnnounced.Equals(true))
+                                {
+                                    <tr>
+                                        <td>@events.eventName</td>
+                                        <td>@events.eventDate</td>
+                                        <td>@events.eventCategory</td>
+                                        <td>@events.eventLocation</td>
+                                        <td>@events.eventFee.ToString()</td>
+                                    </tr>
+                                }
+
+                            }
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+
 
             </div>
-          
+
 
         </div>
 
 
+        <!-- return home button -->
+        <span class="d-flex justify-content-center">
+            <a href="@Url.Action("Index", "Home")" class="mybtnNews">Return Home</a>
+        </span>
+
+        <script>
+            document.getElementById('searchForm').addEventListener('submit', function (e) {
+                const searchedItem = document.getElementById('inpSearch').value;
+                if (!searchedTerm) {
+                    e.preventDefault();
+                    alert("Please enter a search term.");
+                }
+                else {
+                    document.getElementById('foundItem').value = searchedTerm;
+                }
+            });
+        </script>
+
     </div>
 
-    
-    <!-- return home button -->
-    <span class="d-flex justify-content-center">
-        <a href="@Url.Action("Index", "Home")" class="mybtnNews">Return Home</a>
-    </span>
 
-    <script>
-        document.getElementById('searchForm').addEventListener('submit', function (e) {
-            const searchedItem = document.getElementById('inpSearch').value;
-            if (!searchedTerm) {
-                e.preventDefault();
-                alert("Please enter a search term.");
-            }
-            else {
-                document.getElementById('foundItem').value = searchedTerm;
-            }
-        });
-    </script>
-   
-</div>
+</body>
 
 
 

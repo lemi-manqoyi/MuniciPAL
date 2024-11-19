@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\lab_services_student\Documents\GitHub\MuniciPALWebApp\MuniciPAL
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/lab_services_student/Documents/GitHub/MuniciPALWebApp/MuniciPAL/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lab_services_student/Documents/GitHub/MuniciPALWebApp/MuniciPAL/Views/Home/Announcements.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbm5vdW5jZW1lbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,8 +34,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXBvcnRJc3N1ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lab_services_student/Documents/GitHub/MuniciPALWebApp/MuniciPAL/Views/Home/ReviewClaim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXZpZXdDbGFpbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lab_services_student/Documents/GitHub/MuniciPALWebApp/MuniciPAL/Views/Home/ServiceRequestStatus.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXJ2aWNlUmVxdWVzdFN0YXR1cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Documents/GitHub/MuniciPALWebApp/MuniciPAL/Views/Home/Tracking Progress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmFja2luZyBQcm9ncmVzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lab_services_student/Documents/GitHub/MuniciPALWebApp/MuniciPAL/Views/Shared/Error.cshtml]

@@ -89,3 +89,4 @@ C:\Users\lab_services_student\Documents\GitHub\MuniciPALWebApp\MuniciPAL\obj\Deb
 C:\Users\lab_services_student\Documents\GitHub\MuniciPALWebApp\MuniciPAL\obj\Debug\net8.0\MuniciPAL.pdb
 C:\Users\lab_services_student\Documents\GitHub\MuniciPALWebApp\MuniciPAL\obj\Debug\net8.0\MuniciPAL.genruntimeconfig.cache
 C:\Users\lab_services_student\Documents\GitHub\MuniciPALWebApp\MuniciPAL\obj\Debug\net8.0\ref\MuniciPAL.dll
+C:\Users\lab_services_student\Documents\GitHub\MuniciPALWebApp\MuniciPAL\obj\Debug\net8.0\MuniciPAL.csproj.AssemblyReference.cache

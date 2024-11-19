@@ -3,28 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\models\\binarysearchtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:models\\binarysearchtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\controllers\\servicerequestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:controllers\\servicerequestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\views\\home\\servicerequeststatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:views\\home\\servicerequeststatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\views\\home\\reviewclaim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:views\\home\\reviewclaim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\models\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:models\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\controllers\\servicerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:controllers\\servicerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\controllers\\announcementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:controllers\\announcementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\municipal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:municipal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\views\\home\\announcements.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:views\\home\\announcements.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\views\\home\\reportissues.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|solutionrelative:views\\home\\reportissues.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBCA6969-0B97-4554-86EE-69A91707B8A4}|MuniciPAL.csproj|c:\\users\\lab_services_student\\documents\\github\\municipalwebapp\\municipal\\models\\announcedevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,16 +62,41 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAAGAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T18:02:53.512Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Node.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Models\\Node.cs",
+              "RelativeDocumentMoniker": "Models\\Node.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Models\\Node.cs",
+              "RelativeToolTip": "Models\\Node.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T21:32:35.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceRequestManager.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Controllers\\ServiceRequestManager.cs",
+              "RelativeDocumentMoniker": "Controllers\\ServiceRequestManager.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Controllers\\ServiceRequestManager.cs",
+              "RelativeToolTip": "Controllers\\ServiceRequestManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T21:31:49.654Z",
               "EditorCaption": ""
             },
             {
@@ -60,70 +105,109 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ReviewClaim.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\ReviewClaim.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ReviewClaim.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\ReviewClaim.cshtml",
+              "RelativeToolTip": "Views\\Home\\ReviewClaim.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T03:16:15.911Z",
+              "WhenOpened": "2024-11-18T16:09:52.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T18:24:32.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-16T17:20:53.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Announcements.cshtml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\Announcements.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Announcements.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\Announcements.cshtml",
-              "RelativeToolTip": "Views\\Home\\Announcements.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ServiceRequestStatus.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\ServiceRequestStatus.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ServiceRequestStatus.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\ServiceRequestStatus.cshtml",
+              "RelativeToolTip": "Views\\Home\\ServiceRequestStatus.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T09:20:08.68Z",
+              "WhenOpened": "2024-11-12T20:03:41.196Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABUAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-13T09:34:21.945Z",
+              "Title": "BinarySearchTree.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Models\\BinarySearchTree.cs",
+              "RelativeDocumentMoniker": "Models\\BinarySearchTree.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Models\\BinarySearchTree.cs",
+              "RelativeToolTip": "Models\\BinarySearchTree.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T21:35:16.502Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "AnnouncementsController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Controllers\\AnnouncementsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnnouncementsController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Controllers\\AnnouncementsController.cs",
+              "RelativeToolTip": "Controllers\\AnnouncementsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T08:12:42.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReportIssues.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\ReportIssues.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ReportIssues.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\ReportIssues.cshtml",
+              "RelativeToolTip": "Views\\Home\\ReportIssues.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAIwIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-18T15:52:37.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServiceRequestController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Controllers\\ServiceRequestController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ServiceRequestController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Controllers\\ServiceRequestController.cs*",
+              "RelativeToolTip": "Controllers\\ServiceRequestController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T17:16:11.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MuniciPAL",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\MuniciPAL.csproj",
+              "RelativeDocumentMoniker": "MuniciPAL.csproj",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\MuniciPAL.csproj*",
+              "RelativeToolTip": "MuniciPAL.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-19T21:17:32.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Announcements.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\Announcements.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Announcements.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Views\\Home\\Announcements.cshtml",
+              "RelativeToolTip": "Views\\Home\\Announcements.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T09:20:08.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "AnnouncedEvents.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\MuniciPALWebApp\\MuniciPAL\\Models\\AnnouncedEvents.cs",
               "RelativeDocumentMoniker": "Models\\AnnouncedEvents.cs",

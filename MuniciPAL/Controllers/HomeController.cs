@@ -104,6 +104,10 @@ namespace MuniciPAL.Controllers
         public IActionResult ReportIssues()
         {
             return View();
+        } 
+        public IActionResult About()
+        {
+            return View();
         }
 
         public IActionResult ServiceRequestStatus()

@@ -1,13 +1,16 @@
-﻿@{
+﻿@model IEnumerable<ServiceRequest>
 
-}
-<div class="d-flex justify-content-center">
-    <img src="~/Imgs/deadmuniciPAL.png" alt="deadmuniciPAL Logo" height="350" />
-</div>
-<span class="d-flex justify-content-center">
-    <label> This Feature Is Coming Soon</label>
-</span>
+<h2>Service Request Status</h2>
 
-<span class="d-flex justify-content-center">
-    <a href="@Url.Action("Index", "Home")" class="mybtnRequest">Return Home</a>
-</span>
+<ul>
+    @foreach (var request in Model)
+    {
+        <li>
+            <strong>Category:</strong> @request.Category<br />
+            <strong>Issue ID:</strong> @request.IssueId<br />
+            <strong>Description:</strong> @request.Description<br />
+            <strong>Supporting Files:</strong> @string.Join(", ", request.SupportingFiles)<br />
+            <a href="@Url.Action("ViewDetails", "ServiceRequests", new { id = request.IssueId })">View Details</a>
+        </li>
+    }
+</ul>
